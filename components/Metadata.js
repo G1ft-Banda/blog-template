@@ -6,9 +6,7 @@ export default function Meta(props) {
     <Head>
       <title>{title} | App</title>
       <meta name="description" content={description} />
-      <meta itemprop="name" content={title} />
-      <meta itemprop="description" content={description} />
-      <meta itemprop="image" content={image} />
+      <meta name="name" content={title} />
     </Head>
   );
 }
