@@ -1,6 +1,4 @@
-import React from "react";
-
-function about() {
+export default function about() {
   return (
     <div className="about-container">
       <h2>About</h2>
@@ -13,11 +11,8 @@ function about() {
         essentially unchanged. It was popularised in the 1960s with the release
         of Letraset sheets containing Lorem Ipsum passages, and more recently
         with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum. .
+        of Lorem Ipsum.
       </p>
-      <p>This is a minimal blog template that i created using nextjs</p>
     </div>
   );
 }
-
-export default about;

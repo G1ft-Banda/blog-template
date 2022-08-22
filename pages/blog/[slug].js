@@ -3,21 +3,27 @@ import path from "path";
 import matter from "gray-matter";
 import marked from "marked";
 import Link from "next/link";
+import Metadata from "../../components/Metadata.js";
 
 export default function PostPage({
-  frontmatter: { title, date, cover_image },
+  frontmatter: { title, date, cover_image, excerpt },
   slug,
   content,
 }) {
   return (
     <>
+      <Metadata title={title} description={excerpt} image={cover_image} />
       <Link href="/">
         <a className="btn btn-back">Go Back</a>
       </Link>
       <div className="card card-page">
         <h1 className="post-title">{title}</h1>
         <div className="post-date">Posted on {date}</div>
-        <img src={cover_image} alt="" style={{ borderRadius: "6px" }} />
+        <img
+          src={cover_image}
+          alt="featured image"
+          style={{ borderRadius: "6px" }}
+        />
         <div className="post-body">
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
