@@ -27,9 +27,7 @@ export default function Header() {
         <button className="menu-btn" onClick={Toggle}>
           <Image
             src={
-              isToggled
-                ? "/../public/icons/cross.svg"
-                : "/../public/icons/menu-burger.svg"
+               "/../public/icons/menu-burger.svg"
             }
             width={20}
             height={20}
