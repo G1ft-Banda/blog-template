@@ -1,13 +1,52 @@
-import Link from 'next/link'
+import Link from "next/link";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Header() {
+  const [isToggled, setIsToggled] = useState(false);
+
+  useEffect(() => setIsToggled(false), []);
+  function Toggle() {
+    setIsToggled(!isToggled);
+  }
+
+  function CloseMenu() {
+    setIsToggled(false);
+  }
+
+  const styles = {
+    height: isToggled ? 100 : 0,
+  };
+
   return (
     <header>
-      <div className='container'>
-        <Link href='/' passHref>
+      <nav className="container">
+        <Link href="/" passHref>
           <h2>Dev Blog</h2>
         </Link>
-      </div>
+        <button className="menu-btn" onClick={Toggle}>
+          <Image
+            src={
+              isToggled
+                ? "/../public/icons/cross.svg"
+                : "/../public/icons/menu-burger.svg"
+            }
+            width={20}
+            height={20}
+          />
+        </button>
+        <div className="nav-links-container" style={styles}>
+          <span className="nav-links" onClick={CloseMenu}>
+            <Link href="/">About</Link>
+          </span>
+          <span className="nav-links" onClick={CloseMenu}>
+            <Link href="/">Contact</Link>
+          </span>
+          <span className="nav-links" onClick={CloseMenu}>
+            <Link href="/">Github</Link>
+          </span>
+        </div>
+      </nav>
     </header>
-  )
+  );
 }
