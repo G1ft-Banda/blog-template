@@ -2,6 +2,8 @@
 
 Simple static blog using markdown and Next.js
 
+Demo [https://dev-blog-liard.vercel.app/]
+
 ## Usage
 
 ```bash
