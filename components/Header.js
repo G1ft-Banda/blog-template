@@ -33,6 +33,7 @@ export default function Header() {
             }
             width={20}
             height={20}
+            alt="icon"
           />
         </button>
         <div className="nav-links-container" style={styles}>
