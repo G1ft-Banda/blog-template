@@ -37,13 +37,13 @@ export default function Header() {
         </button>
         <div className="nav-links-container" style={styles}>
           <span className="nav-links" onClick={CloseMenu}>
-            <Link href="/">About</Link>
+            <Link href="/">Home</Link>
           </span>
           <span className="nav-links" onClick={CloseMenu}>
-            <Link href="/">Contact</Link>
+            <Link href="/about">About</Link>
           </span>
           <span className="nav-links" onClick={CloseMenu}>
-            <Link href="/">Github</Link>
+            <Link href="https://github.com">Github</Link>
           </span>
         </div>
       </nav>

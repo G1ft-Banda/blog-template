@@ -11,6 +11,12 @@ body {
   background-color:#F2F4F7;
 }
 
+#__next{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 p {
   margin: 15px 0;
   line-height: 1.8;
@@ -73,7 +79,7 @@ header a {
 
 .btn {
   display: inline-block;
-  color: cyan;
+  color: black;
   border: none;
   padding: 8px 0;
   border-radius: 5px;
@@ -136,6 +142,8 @@ ol {
   line-height: 2.3;
   font-weight: bold;
   margin: 10px 0;
+  margin-left: 10px;
+  
 }
 
 .post-body pre {
@@ -155,8 +163,15 @@ footer{
   padding: 20px;
   color: #f4f4f4;
   background-color:darkgrey;
-  margin-top: 10px;
+  margin-top: auto;
   font-size: 10px;
+}
+
+.about-container{
+  margin: auto;
+  max-width: 600px;
+  padding: 15px;
+  
 }
 
 
@@ -171,9 +186,6 @@ footer{
   .menu-btn{
     display: inline;
   }
-  .container{
-    z-index: 99;
-  }
   .nav-links-container{
     display: flex;
     flex-direction: column;
@@ -182,12 +194,17 @@ footer{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    border-bottom: lightgray 2px solid;
     margin-top: 3px;
   }
   .nav-links{
     margin: 0 auto;
     z-index:1;
+  }
+  .card-page{
+    padding: 5px;
+  }
+  .container{
+    padding: 10px;
   }
 }
 
