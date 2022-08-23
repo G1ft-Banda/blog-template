@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Header() {
@@ -24,19 +23,9 @@ export default function Header() {
         </Link>
         <button className="menu-btn" onClick={Toggle}>
           {isToggled ? (
-            <Image
-              alt="icon"
-              src="/../public/icon/X.svg"
-              width={20}
-              height={20}
-            />
+            <img alt="icon" src="/icon/X.svg" />
           ) : (
-            <Image
-              alt="icon"
-              src="/../public/icon/Bars.svg"
-              width={20}
-              height={20}
-            />
+            <img alt="icon" src="/icon/Bars.svg" />
           )}
         </button>
         <div className="nav-links-container" style={styles}>
