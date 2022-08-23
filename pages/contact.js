@@ -1,57 +1,31 @@
-import Image from "next/image";
 export default function about() {
   return (
     <div className="flex-container">
       <span className="avatar-img">
-        <Image
-          alt="avatar"
-          src="/../public/avatar.jpg"
-          width={100}
-          height={100}
-        />
+        <img alt="avatar" src="avatar.jpg" width={100} height={100} />
       </span>
       <div className="c-container">
         <span>
-          <Image
-            alt="email icon"
-            src="/../public/icon/envelope.svg"
-            width={30}
-            height={30}
-          ></Image>
+          <img alt=" icon" src="icon/envelope.svg"></img>
           <a className="contact-details">email.example.com</a>
         </span>
 
         <span>
-          <Image
-            alt="email icon"
-            src="/../public/icon/linkedin.svg"
-            width={30}
-            height={30}
-          ></Image>
+          <img alt=" icon" src="icon/linkedin.svg"></img>
           <a href="https://linkedin.com" className="contact-details">
             Linkedin
           </a>
         </span>
 
         <span>
-          <Image
-            alt="email icon"
-            src="/../public/icon/twitter.svg"
-            width={30}
-            height={30}
-          ></Image>
+          <img alt=" icon" src="icon/twitter.svg"></img>
           <a className="contact-details" href="https://twitter.com">
             Twitter
           </a>
         </span>
 
         <span>
-          <Image
-            alt="email icon"
-            src="/../public/icon/instagram.svg"
-            width={30}
-            height={30}
-          ></Image>
+          <img alt=" icon" src="icon/instagram.svg"></img>
           <a className="contact-details" href="https://instagram.com">
             Instagram
           </a>
