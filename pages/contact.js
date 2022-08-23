@@ -28,11 +28,7 @@ export default function about() {
             width={30}
             height={30}
           ></Image>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            className="contact-details"
-          >
+          <a href="https://linkedin.com" className="contact-details">
             Linkedin
           </a>
         </span>
@@ -44,11 +40,7 @@ export default function about() {
             width={30}
             height={30}
           ></Image>
-          <a
-            className="contact-details"
-            target="_blank"
-            href="https://twitter.com"
-          >
+          <a className="contact-details" href="https://twitter.com">
             Twitter
           </a>
         </span>
@@ -60,11 +52,7 @@ export default function about() {
             width={30}
             height={30}
           ></Image>
-          <a
-            className="contact-details"
-            target="_blank"
-            href="https://instagram.com"
-          >
+          <a className="contact-details" href="https://instagram.com">
             Instagram
           </a>
         </span>
