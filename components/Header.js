@@ -5,11 +5,6 @@ import { useState, useEffect } from "react";
 export default function Header() {
   const [isToggled, setIsToggled] = useState(false);
 
-  useEffect(() => setIsToggled(false), []);
-  function Toggle() {
-    setIsToggled(!isToggled);
-  }
-
   function CloseMenu() {
     setIsToggled(false);
   }
