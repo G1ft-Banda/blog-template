@@ -7,11 +7,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <script
-          src="https://kit.fontawesome.com/d14a45b8f3.js"
-          crossOrigin="anonymous"
-          async
-        ></script>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
