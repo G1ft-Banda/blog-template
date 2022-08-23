@@ -23,9 +23,9 @@ export default function Header() {
         </Link>
         <button className="menu-btn" onClick={Toggle}>
           {isToggled ? (
-            <img alt="icon" src="/icon/X.svg" />
+            <img alt="icon" src="/icon/X.svg" className="icon" />
           ) : (
-            <img alt="icon" src="/icon/Bars.svg" />
+            <img alt="icon" src="/icon/Bars.svg" className="icon" />
           )}
         </button>
         <div className="nav-links-container" style={styles}>
