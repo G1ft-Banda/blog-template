@@ -20,7 +20,7 @@ export default function Header() {
     <header>
       <nav className="nav-container">
         <Link href="/" passHref>
-          <h2>Dev Blog</h2>
+          <h2>My Blog</h2>
         </Link>
         <button className="menu-btn" onClick={Toggle}>
           {isToggled ? (
@@ -47,7 +47,7 @@ export default function Header() {
             <Link href="/about">About</Link>
           </span>
           <span className="nav-links" onClick={CloseMenu}>
-            <Link href="https://github.com">Github</Link>
+            <Link href="/contact">Contact</Link>
           </span>
         </div>
       </nav>
