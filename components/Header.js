@@ -8,6 +8,9 @@ export default function Header() {
   function CloseMenu() {
     setIsToggled(false);
   }
+  function Toggle() {
+    setIsToggled(!isToggled);
+  }
 
   const styles = {
     height: isToggled ? 100 : 0,
@@ -15,15 +18,25 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="container">
+      <nav className="nav-container">
         <Link href="/" passHref>
           <h2>Dev Blog</h2>
         </Link>
         <button className="menu-btn" onClick={Toggle}>
           {isToggled ? (
-            <i className="fa-solid fa-xmark fa-md"></i>
+            <Image
+              alt="icon"
+              src="/../public/icon/X.svg"
+              width={20}
+              height={20}
+            />
           ) : (
-            <i className="fa-solid fa-bars fa-md"></i>
+            <Image
+              alt="icon"
+              src="/../public/icon/Bars.svg"
+              width={20}
+              height={20}
+            />
           )}
         </button>
         <div className="nav-links-container" style={styles}>
