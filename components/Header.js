@@ -47,7 +47,7 @@ export default function Header() {
             <Link href="/about">About</Link>
           </span>
           <span className="nav-links" onClick={CloseMenu}>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">Contact </Link>
           </span>
         </div>
       </nav>
