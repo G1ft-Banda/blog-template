@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
         <script
           src="https://kit.fontawesome.com/d14a45b8f3.js"
           crossOrigin="anonymous"
+          async
         ></script>
       </Head>
       <Header />
