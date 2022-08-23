@@ -7,13 +7,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        <script
+          src="https://kit.fontawesome.com/d14a45b8f3.js"
           crossOrigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
+        ></script>
       </Head>
       <Header />
       <main className="container">

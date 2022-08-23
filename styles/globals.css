@@ -75,6 +75,7 @@ header a {
   display: none;
   flex-basis: 50%;
   text-align: right;
+  font-size: 25px;
 }
 
 .btn {

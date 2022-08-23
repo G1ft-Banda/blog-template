@@ -25,16 +25,11 @@ export default function Header() {
           <h2>Dev Blog</h2>
         </Link>
         <button className="menu-btn" onClick={Toggle}>
-          <Image
-            src={
-              isToggled
-                ? "/../public/icons/cross.svg"
-                : "/../public/icons/menu-burger.svg"
-            }
-            width={20}
-            height={20}
-            alt="icon"
-          />
+          {isToggled ? (
+            <i className="fa-solid fa-xmark fa-md"></i>
+          ) : (
+            <i className="fa-solid fa-bars fa-md"></i>
+          )}
         </button>
         <div className="nav-links-container" style={styles}>
           <span className="nav-links" onClick={CloseMenu}>
